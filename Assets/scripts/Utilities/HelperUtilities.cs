@@ -24,5 +24,12 @@ public static class HelperUtilities
         return worldPosition;
     }
 
-    //6Ка
+    public static float GetAngleFromVector(Vector3 vector)
+    {
+        float radians = Mathf.Atan2(vector.y, vector.x);
+
+        float degrees = radians * Mathf.Rad2Deg;
+
+        return degrees;
+    }
 }
