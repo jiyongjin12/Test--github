@@ -32,4 +32,53 @@ public static class HelperUtilities
 
         return degrees;
     }
+
+    //AimDirection 
+    //22도에서 67도는 upRight
+    //67도에서 112도는 up
+    //112도에서 158도는 upLeft
+    //138도에서 -135도는 Left
+    //-135도에서 -45도는 Down
+    //-45도에서 22도는 Right
+
+    public static AimDirection GetAimDirection(float angleDegerees)
+    {
+        AimDirection aimDirection;
+
+        //UpRight
+        if (angleDegerees >= 22f && angleDegerees <= 67f)
+        {
+            aimDirection = AimDirection.UpRight;
+        }
+        //Up
+        else if (angleDegerees > 67f && angleDegerees <= 112f)
+        {
+            aimDirection = AimDirection.Up;
+        }
+        //UpLeft
+        else if (angleDegerees > 112f && angleDegerees <= 158f)
+        {
+            aimDirection = AimDirection.UpLeft;
+        }
+        //Left
+        else if ((angleDegerees <= 180f && angleDegerees > 158f) || (angleDegerees > -180 && angleDegerees <= -135f))
+        {
+            aimDirection = AimDirection.Left;
+        }
+        //Down
+        else if ((angleDegerees > -135 && angleDegerees <= -45f))
+        {
+            aimDirection = AimDirection.Down;
+        }
+        //Right
+        else if ((angleDegerees > -45f && angleDegerees <= 0f) || (angleDegerees > 0 && angleDegerees < 22f))
+        {
+            aimDirection = AimDirection.Right;
+        }
+        else
+        {
+            aimDirection = AimDirection.Right;
+        }
+        return aimDirection;
+    }
 }
