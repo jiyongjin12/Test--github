@@ -6,15 +6,41 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class AimatePlayer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Player player;
+
+    private void Awake()
     {
-        
+        player = GetComponent<Player>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        player.idleEvent.OnIdle += IdleEvent_OnIdle;
+
+        player.aimWeaponEvent.OnWeaponAim += AimWeaponEvent_OnweaponAim;
+    }
+    
+    
+    private void OnDisable()
+    {
+        player.idleEvent.OnIdle -= IdleEvent_OnIdle;
+
+        player.aimWeaponEvent.OnWeaponAim -= AimWeaponEvent_OnweaponAim;
+    }
+
+    private void IdleEvent_OnIdle(IdleEvent idleEvent)
+    {
+        SetIdleAnimationParameters();
+    }
+
+    private void AimWeaponEvent_OnweaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
+    {
+
+    }
+
+    private void SetIdleAnimationParameters()
+    {
+        player.animator.SetBool(Settings.isMoving, false);
+        player.animator.SetBool(Settings.isIdle, false);
     }
 }
