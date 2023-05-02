@@ -14,5 +14,3 @@ public class IdleEvent : MonoBehaviour
 }
 
 
-//Ό³Έν µθ±β
-//31ΊΠ
