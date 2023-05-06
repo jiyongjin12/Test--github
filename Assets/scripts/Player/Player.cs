@@ -16,10 +16,12 @@ public class Player : MonoBehaviour
 {
     [HideInInspector] public IdleEvent idleEvent;
     [HideInInspector] public AimWeaponEvent aimWeaponEvent;
+    [HideInInspector] public Animator animator;
 
     private void Awake()
     {
         idleEvent = GetComponent<IdleEvent>();
         aimWeaponEvent = GetComponent<AimWeaponEvent>();
+        animator = GetComponent<Animator>();
     }
 }

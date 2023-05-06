@@ -35,6 +35,16 @@ public class AimatePlayer : MonoBehaviour
 
     private void AimWeaponEvent_OnweaponAim(AimWeaponEvent aimWeaponEvent, AimWeaponEventArgs aimWeaponEventArgs)
     {
+        InitializeAimAnimationParameters();
+    }
+
+    private void InitializeAimAnimationParameters()
+    {
+        player.animator.SetBool(Settings.aimUp, false);
+        player.animator.SetBool(Settings.aimUpRight, false);
+        player.animator.SetBool(Settings.aimUpLeft, false);
+        player.animator.SetBool(Settings.aimRight, false);
+        player.animator.SetBool(Settings.aimDown, false);
 
     }
 
@@ -43,4 +53,6 @@ public class AimatePlayer : MonoBehaviour
         player.animator.SetBool(Settings.isMoving, false);
         player.animator.SetBool(Settings.isIdle, false);
     }
+
+    private void 
 }
