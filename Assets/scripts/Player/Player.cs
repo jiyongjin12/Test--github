@@ -4,10 +4,12 @@ using UnityEngine;
 
 /*
 #region REQUIRE COMPONENTS
+[RequireComponent(typeof(PlayerControl))]
 [RequireComponent(typeof(IdleEvent))]
 [RequireComponent(typeof(Idle))]
 [RequireComponent(typeof(AimWeaponEvent))]
 [RequireComponent(typeof(AimWeapon))]
+[RequireComponent(typeof(AnimatePlayer))]
 #endregion REQUIRE COMPONENTS
 */
 
