@@ -19,8 +19,8 @@ public class AimatePlayer : MonoBehaviour
 
         player.aimWeaponEvent.OnWeaponAim += AimWeaponEvent_OnweaponAim;
     }
-    
-    
+
+
     private void OnDisable()
     {
         player.idleEvent.OnIdle -= IdleEvent_OnIdle;
