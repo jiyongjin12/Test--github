@@ -8,13 +8,13 @@
 
    ![ballBowns-SampleScene-WindowsMacLinux-Unity2021 3 25f1Personal__DX11_2023-08-0523-53-21-ezgif com-video-to-gif-converter](https://github.com/jiyongjin12/Test--github/assets/108967430/8c5df0e5-b69e-4c64-ad35-c37f4662a772)
 
-   #제목
+   # 제목
 
-   ##제목
+   ## 제목
 
-   ###제목
+   ### 제목
 
-   ####샵은 제목처럼 크게만들때 사용
+   #### 샵은 제목처럼 크게만들때 사용
 
    -----------
 
@@ -25,9 +25,9 @@
    #### 불릿(bullet)으로 표현
    *****************************
 
-   + 를 사용하거나
-   - 를 사용하거나
-   * 로 사용가능
++ 를 사용하거나
+- 를 사용하거나
+* 로 사용가능
    *    탭으로
    *    들여쓰기도 가능
 
