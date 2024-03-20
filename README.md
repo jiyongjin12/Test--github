@@ -37,3 +37,14 @@
 
 굵고 기울이게 할려면 ___3번을 하면된다___
 ***이것도 마찬가지다***
+
+
+## 하이퍼 링크 다는법
+
+-----------------------------------
+
+꺽쇠 안에 주소를 단다 <https://github.com/jiyongjin12/Test--github>
+
+이렇게 [깃허브 테스트](https://github.com/jiyongjin12/Test--github) 이름으로도 가능하다
+
+또한 [깃허브 테스트](https://github.com/jiyongjin12/Test--github, "구현설명 ~ ~ ~")처럼 구현설명도 가능하다 
